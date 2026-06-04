@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>把事務所裝進 Notion ｜ 課程複習目錄</title>
+<style>
+  :root{
+    --ink:#2c3e50; --ink-soft:#34495e; --accent:#d35400;
+    --accent-soft:#e67e22; --paper:#f7f6f3; --line:#e3e0da;
+    --muted:#7a7368;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Helvetica Neue",Arial,"PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.7;
+  }
+  .serif{font-family:Georgia,"Times New Roman","Songti TC",serif;}
+
+  header{
+    background:var(--ink); color:#fff; padding:14px 32px;
+    display:flex; align-items:center; gap:12px;
+  }
+  header .brand{font-family:Georgia,serif; font-size:18px; letter-spacing:.5px;}
+  header .brand b{color:var(--accent-soft);}
+
+  .hero{
+    background:var(--ink); color:#fff;
+    border-left:8px solid var(--accent);
+    padding:64px 32px 72px;
+  }
+  .hero .eyebrow{
+    color:var(--accent-soft); letter-spacing:3px; font-size:13px;
+    font-weight:700; margin-bottom:18px;
+  }
+  .hero h1{font-size:48px; line-height:1.2; margin-bottom:16px;}
+  .hero p.sub{font-size:18px; color:#cfd6dc;}
+  .hero .meta{
+    margin-top:28px; padding-top:18px; border-top:1px solid #4a5b6b;
+    font-size:14px; color:#aeb9c4;
+  }
+
+  .wrap{max-width:960px; margin:0 auto; padding:56px 32px 80px;}
+  .section-label{
+    color:var(--accent); letter-spacing:3px; font-size:13px;
+    font-weight:700; margin-bottom:10px;
+  }
+  .wrap > h2{font-size:30px; margin-bottom:14px;}
+  .wrap > p.lead{font-size:17px; color:var(--ink-soft); margin-bottom:40px;}
+
+  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .card{
+    background:#fff; border:1px solid var(--line);
+    border-top:4px solid var(--accent);
+    border-radius:8px; padding:28px 24px;
+    text-decoration:none; color:inherit;
+    transition:transform .15s ease, box-shadow .15s ease;
+    display:flex; flex-direction:column;
+  }
+  .card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(44,62,80,.12);}
+  .card .tag{
+    font-size:13px; font-weight:700; color:var(--accent);
+    letter-spacing:1px; margin-bottom:10px;
+  }
+  .card h3{font-size:22px; margin-bottom:10px;}
+  .card p{font-size:15px; color:var(--muted); flex:1;}
+  .card .go{
+    margin-top:18px; font-size:14px; font-weight:700; color:var(--ink);
+  }
+  .card.soon{opacity:.6;}
+  .card.soon .go{color:var(--muted);}
+
+  footer{
+    text-align:center; padding:32px; color:var(--muted);
+    font-size:13px; border-top:1px solid var(--line);
+  }
+  @media(max-width:760px){
+    .cards{grid-template-columns:1fr;}
+    .hero h1{font-size:34px;}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <span class="brand">初樸 · <b>Notion</b> 複習</span>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">COURSE REVIEW HUB</div>
+    <h1 class="serif">把事務所裝進 Notion</h1>
+    <p class="sub">14 人建築師事務所的數位地基 ｜ 互動複習網頁</p>
+    <div class="meta">內容來源：初樸 Notion 課程筆記 · 分為上、中、下三集</div>
+  </section>
+
+  <main class="wrap">
+    <div class="section-label">CHAPTERS</div>
+    <h2 class="serif">三集複習目錄</h2>
+    <p class="lead">依課程進度分為上、中、下三集，點選下方卡片即可進入各集互動複習頁面。</p>
+
+    <div class="cards">
+      <a class="card" href="pp_notion_part1.html">
+        <span class="tag">上集 · PART 1</span>
+        <h3 class="serif">掌握磚塊・打好地基</h3>
+        <p>從人治升級為單一真實來源，建立 Notion 指揮中心的基礎觀念。</p>
+        <span class="go">進入上集 →</span>
+      </a>
+
+      <a class="card" href="pp_notion_part2.html">
+        <span class="tag">中集 · PART 2</span>
+        <h3 class="serif">互動複習</h3>
+        <p>延續上集基礎，深入專案、人員與廠商的實際操作與串連。</p>
+        <span class="go">進入中集 →</span>
+      </a>
+
+      <span class="card soon">
+        <span class="tag">下集 · PART 3</span>
+        <h3 class="serif">即將推出</h3>
+        <p>下集內容準備中，上傳後此卡片將更新為可點選連結。</p>
+        <span class="go">敬請期待</span>
+      </span>
+    </div>
+  </main>
+
+  <footer>初樸 · Notion 課程複習 ｜ © 2026</footer>
+</body>
+</html>
